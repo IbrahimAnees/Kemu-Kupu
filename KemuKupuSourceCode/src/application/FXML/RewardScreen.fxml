@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" styleClass="backgroundColor" stylesheets="@../CSS/application.css" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="application.RewardScreenController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#20374d" height="143.0" layoutX="23.0" layoutY="439.0" opacity="0.25" stroke="TRANSPARENT" strokeType="INSIDE" width="955.0" />
+      <Text fx:id="scoreText" fill="WHITE" layoutX="-24.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score" textAlignment="RIGHT" wrappingWidth="475.0">
+         <font>
+            <Font name="Cousine Bold" size="22.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Text>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="97.0" layoutY="447.0" prefHeight="37.0" prefWidth="164.0" text="MASTERED" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Cousine Bold" size="22.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label fx:id="faultedLabel" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="349.0" layoutY="484.0" prefHeight="162.0" prefWidth="300.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Cousine" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="417.0" layoutY="447.0" prefHeight="37.0" prefWidth="164.0" text="FAULTED" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Cousine Bold" size="22.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="737.0" layoutY="447.0" prefHeight="37.0" prefWidth="164.0" text="FAILED" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Cousine Bold" size="22.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label fx:id="failedLabel" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="669.0" layoutY="484.0" prefHeight="162.0" prefWidth="300.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Cousine" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label fx:id="masteredLabel" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="484.0" prefHeight="162.0" prefWidth="300.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Cousine" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ImageView fitHeight="153.0" fitWidth="150.0" layoutX="439.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/trophy.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="131.0" fitWidth="223.0" layoutX="396.0" layoutY="41.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/confetti2.gif" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="72.0" prefHeight="58.0" prefWidth="1000.0" text="REWARDS" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Cousine Bold" size="54.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label fx:id="bonusLabel" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="239.0" prefHeight="24.0" prefWidth="1000.0" text="Final score = (Score/Time) x 1000" textFill="WHITE">
+         <font>
+            <Font name="Cousine" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label fx:id="realScoreText" alignment="CENTER" contentDisplay="CENTER" layoutX="238.0" layoutY="263.0" prefHeight="49.0" prefWidth="528.0" text="Score:" textFill="#27f510">
+         <font>
+            <Font name="Cousine Bold" size="31.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ImageView fx:id="settingsNormal" fitHeight="77.0" fitWidth="86.0" layoutX="866.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/settings.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow height="36.18" radius="24.42" spread="0.25" width="63.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="settingsHover" fitHeight="77.0" fitWidth="86.0" layoutX="866.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/settings.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Glow level="0.89" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="settingsClicked" blendMode="MULTIPLY" fitHeight="77.0" fitWidth="86.0" layoutX="866.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/settings.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow height="36.18" radius="24.42" spread="0.25" width="63.5" />
+         </effect>
+      </ImageView>
+      <Button layoutX="866.0" layoutY="61.0" mnemonicParsing="false" onMouseClicked="#showSettings" onMouseEntered="#showSettingsGlow" onMouseExited="#hideSettingsGlow" onMousePressed="#showSettingsClicked" onMouseReleased="#hideSettingsClicked" opacity="0.0" prefHeight="83.0" prefWidth="75.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="settingsNormal1" fitHeight="77.0" fitWidth="86.0" layoutX="65.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/clipart4338423.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow height="36.18" radius="24.42" spread="0.25" width="63.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="homeHover" fitHeight="77.0" fitWidth="86.0" layoutX="65.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/clipart4338423.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Glow level="0.89" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="homeClicked" blendMode="MULTIPLY" fitHeight="77.0" fitWidth="86.0" layoutX="65.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/clipart4338423.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow height="36.18" radius="24.42" spread="0.25" width="63.5" />
+         </effect>
+      </ImageView>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="63.0" mnemonicParsing="false" onAction="#switchToMain" onMouseEntered="#showHomeGlow" onMouseExited="#hideHomeGlow" onMousePressed="#showHomeClicked" onMouseReleased="#hideHomeClicked" opacity="0.0" prefHeight="68.0" prefWidth="86.0" style="-fx-background-color: #768d87; -fx-border-radius: 15px;">
+         <font>
+            <Font name="Cousine Bold" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView blendMode="HARD_LIGHT" fitHeight="240.0" fitWidth="355.0" layoutX="100.0" layoutY="606.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/playAgain.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="playAgainHover" fitHeight="240.0" fitWidth="355.0" layoutX="100.0" layoutY="606.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/playAgain.png" />
+         </image>
+         <effect>
+            <Glow level="0.6" />
+         </effect>
+      </ImageView>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="100.0" layoutY="606.0" mnemonicParsing="false" onAction="#switchToSelectTheme" onMouseEntered="#showPlayAgainHover" onMouseExited="#hidePlayAgainHover" opacity="0.0" prefHeight="155.0" prefWidth="355.0" style="-fx-background-color: #768d87; -fx-border-radius: 15px;" text="PLAY AGAIN" textAlignment="CENTER">
+         <font>
+            <Font name="Cousine Bold" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Line endX="100.0" endY="-54.0" layoutX="238.0" layoutY="624.0" startX="100.0" startY="-171.0" stroke="WHITE" strokeWidth="3.0" />
+      <Line endX="100.0" endY="-57.0" layoutX="557.0" layoutY="624.0" startX="100.0" startY="-171.0" stroke="WHITE" strokeWidth="3.0" />
+      <Text fx:id="timeText" fill="WHITE" layoutX="553.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" wrappingWidth="475.0">
+         <font>
+            <Font name="Cousine Bold" size="22.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <TextField fx:id="nameInput" layoutX="345.0" layoutY="322.0" prefHeight="37.0" prefWidth="310.0" promptText="Enter your name" style="-fx-background-color: #A8A8A8; -fx-border-color: black; -fx-border-width: 3;" styleClass="text-field" stylesheets="@../CSS/application.css">
+         <font>
+            <Font name="Cousine" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.21" />
+         </effect>
+      </TextField>
+      <ImageView fx:id="buttonImage" blendMode="HARD_LIGHT" fitHeight="150.0" fitWidth="200.0" layoutX="399.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/saveScore.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="saveHover" fitHeight="150.0" fitWidth="200.0" layoutX="399.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/saveScore.png" />
+         </image>
+         <effect>
+            <Glow level="0.54" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="saveClicked" blendMode="BLUE" fitHeight="150.0" fitWidth="200.0" layoutX="399.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/saveScore.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="submitButton" disable="true" layoutX="399.0" layoutY="375.0" mnemonicParsing="false" onAction="#onSubmitName" onMouseEntered="#showSaveGlow" onMouseExited="#hideSaveGlow" onMousePressed="#showSaveClicked" opacity="0.0" prefHeight="50.0" prefWidth="200.0" text="submit">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView blendMode="HARD_LIGHT" fitHeight="240.0" fitWidth="355.0" layoutX="544.0" layoutY="606.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/goToLeaderboard.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="gLeaderboardHover" fitHeight="240.0" fitWidth="355.0" layoutX="544.0" layoutY="606.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/goToLeaderboard.png" />
+         </image>
+         <effect>
+            <Glow level="0.6" />
+         </effect>
+      </ImageView>
+      <Button fx:id="goToLeaderboard" layoutX="544.0" layoutY="606.0" mnemonicParsing="false" onAction="#switchToLeaderBoard" onMouseEntered="#showGLeaderboardHover" onMouseExited="#hideGLeaderboardHover" opacity="0.0" prefHeight="153.0" prefWidth="355.0" text="Go to Leaderbaord">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="submittedLabel" layoutX="413.0" layoutY="349.0" text="Score saved!" textAlignment="CENTER" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Cousine Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

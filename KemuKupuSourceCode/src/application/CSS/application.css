@@ -1,0 +1,16 @@
+.backgroundColor{
+    -fx-background-color: linear-gradient(to right,#0F2027, #203A43, #2C5364);
+}
+
+.backgroundColor2{
+    -fx-background-color: linear-gradient(to right,#bdc3c7, #A9A9A9);
+}
+
+.combo-box-popup {
+    -fx-font-size : 12pt;
+    -fx-font-family: Cousine;
+}
+
+.text-field {
+    -fx-prompt-text-fill: #484848;
+}

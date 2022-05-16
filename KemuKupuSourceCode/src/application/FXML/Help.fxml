@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" styleClass="backgroundColor" stylesheets="@../CSS/application.css" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="application.HelpController">
+   <children>
+      <ImageView fx:id="settingsNormal" fitHeight="77.0" fitWidth="86.0" layoutX="866.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/settings.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow height="36.18" radius="24.42" spread="0.25" width="63.5" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="174.0" fitWidth="171.0" layoutX="415.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/questionMark.gif" />
+         </image>
+         <effect>
+            <DropShadow height="42.25" radius="19.1075" spread="0.04" width="36.18" />
+         </effect>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="72.0" prefHeight="58.0" prefWidth="1000.0" text="HELP" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Cousine Bold" size="54.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ImageView fx:id="settingsHover" fitHeight="77.0" fitWidth="86.0" layoutX="866.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/settings.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Glow level="0.89" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="settingsClicked" blendMode="MULTIPLY" fitHeight="77.0" fitWidth="86.0" layoutX="866.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/settings.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow height="36.18" radius="24.42" spread="0.25" width="63.5" />
+         </effect>
+      </ImageView>
+      <Button layoutX="866.0" layoutY="61.0" mnemonicParsing="false" onMouseClicked="#showSettings" onMouseEntered="#showSettingsGlow" onMouseExited="#hideSettingsGlow" onMousePressed="#showSettingsClicked" onMouseReleased="#hideSettingsClicked" opacity="0.0" prefHeight="83.0" prefWidth="75.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="settingsNormal1" fitHeight="77.0" fitWidth="86.0" layoutX="65.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/clipart4338423.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow height="36.18" radius="24.42" spread="0.25" width="63.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="homeHover" fitHeight="77.0" fitWidth="86.0" layoutX="65.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/clipart4338423.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Glow level="0.89" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="homeClicked" blendMode="MULTIPLY" fitHeight="77.0" fitWidth="86.0" layoutX="65.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/clipart4338423.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow height="36.18" radius="24.42" spread="0.25" width="63.5" />
+         </effect>
+      </ImageView>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="63.0" mnemonicParsing="false" onAction="#switchToMain" onMouseEntered="#showHomeGlow" onMouseExited="#hideHomeGlow" onMousePressed="#showHomeClicked" onMouseReleased="#hideHomeClicked" opacity="0.0" prefHeight="68.0" prefWidth="86.0" style="-fx-background-color: #768d87; -fx-border-radius: 15px;">
+         <font>
+            <Font name="Cousine Bold" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="scoring2" fill="WHITE" layoutX="85.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scoring is only for the &quot;New Quiz&quot; module." textAlignment="JUSTIFY" visible="false" wrappingWidth="827.71533203125">
+         <font>
+            <Font name="Cousine" size="16.0" />
+         </font></Text>
+      <ImageView blendMode="HARD_LIGHT" fitHeight="83.0" fitWidth="279.0" layoutX="206.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/gameModulesButton.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView blendMode="HARD_LIGHT" fitHeight="83.0" fitWidth="279.0" layoutX="508.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/scoringButton.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView blendMode="HARD_LIGHT" fitHeight="83.0" fitWidth="279.0" layoutX="206.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/macronsButton.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView blendMode="HARD_LIGHT" fitHeight="83.0" fitWidth="279.0" layoutX="508.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/speechSpeedButton.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="gameModulesHover" fitHeight="83.0" fitWidth="279.0" layoutX="206.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/gameModulesButton.png" />
+         </image>
+         <effect>
+            <Glow level="0.53" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="scoringHover" fitHeight="83.0" fitWidth="279.0" layoutX="508.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/scoringButton.png" />
+         </image>
+         <effect>
+            <Glow level="0.53" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="macronsHover" fitHeight="83.0" fitWidth="279.0" layoutX="206.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/macronsButton.png" />
+         </image>
+         <effect>
+            <Glow level="0.53" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="speechSpeedHover" fitHeight="83.0" fitWidth="279.0" layoutX="508.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/speechSpeedButton.png" />
+         </image>
+         <effect>
+            <Glow level="0.53" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="gameModulesClicked" blendMode="BLUE" fitHeight="83.0" fitWidth="279.0" layoutX="206.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/gameModulesButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="scoringClicked" blendMode="BLUE" fitHeight="83.0" fitWidth="279.0" layoutX="508.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/scoringButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="macronsClicked" blendMode="BLUE" fitHeight="83.0" fitWidth="279.0" layoutX="206.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/macronsButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="speechSpeedClicked" blendMode="BLUE" fitHeight="83.0" fitWidth="279.0" layoutX="508.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/speechSpeedButton.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="gameModulesButton" layoutX="206.0" layoutY="193.0" mnemonicParsing="false" onAction="#showGameModules" onMouseEntered="#showGameModulesGlow" onMouseExited="#hideGameModulesGlow" opacity="0.0" prefHeight="65.0" prefWidth="279.0" text="game modules">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="macronsButton" layoutX="206.0" layoutY="279.0" mnemonicParsing="false" onAction="#showMacrons" onMouseEntered="#showMacronsGlow" onMouseExited="#hideMacronsGlow" opacity="0.0" prefHeight="65.0" prefWidth="279.0" text="macrons">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="scoringButton" layoutX="508.0" layoutY="192.0" mnemonicParsing="false" onAction="#showScoring" onMouseEntered="#showScoringGlow" onMouseExited="#hideScoringGlow" opacity="0.0" prefHeight="65.0" prefWidth="279.0" text="scoring">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="speedSpeechButton" layoutX="508.0" layoutY="280.0" mnemonicParsing="false" onAction="#showSpeedSpeech" onMouseEntered="#showSpeechSpeedGlow" onMouseExited="#hideSpeedSpeechGlow" opacity="0.0" prefHeight="65.0" prefWidth="279.0" text="speech speed">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="scoring1" fill="WHITE" layoutX="313.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCORING" textAlignment="CENTER" visible="false" wrappingWidth="372.71533203125">
+         <font>
+            <Font name="Cousine Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <Text fx:id="scoring3" fill="WHITE" layoutX="85.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your score increases by 1 if you get a word right on the first attempt, and by 0.5 if you get it right on the second attempt." textAlignment="JUSTIFY" visible="false" wrappingWidth="827.71533203125">
+         <font>
+            <Font name="Cousine" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="scoring4" fill="WHITE" layoutX="85.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The final score on the reward screen takes into account your original score, and the time taken to complete the quiz. The formula used to calculate the final score is original score divided by seconds taken, multiplied by 1000." textAlignment="JUSTIFY" visible="false" wrappingWidth="827.71533203125">
+         <font>
+            <Font name="Cousine" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="scoring5" fill="WHITE" layoutX="85.0" layoutY="608.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are able to save your final score. The leaderboards for each theme are ranked first by number of words correct, followed by final score. So in order to get a high final score, aim to get as many words correct as possible in a short period of time!" textAlignment="JUSTIFY" visible="false" wrappingWidth="827.71533203125">
+         <font>
+            <Font name="Cousine" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="gm2" fill="WHITE" layoutX="85.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="There are two game modules: new quiz and practice quiz." textAlignment="JUSTIFY" visible="false" wrappingWidth="827.71533203125">
+         <font>
+            <Font name="Cousine" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="gm1" fill="WHITE" layoutX="313.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GAME MODULES" textAlignment="CENTER" visible="false" wrappingWidth="372.71533203125">
+         <font>
+            <Font name="Cousine Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <Text fx:id="gm3" fill="WHITE" layoutX="85.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The new quiz is a quiz to test your Te Reo spelling knowledge. In this mode, you will attempt to spell 5 Te Reo words from your chosen topic correctly. In this mode, there is scoring based on the number of words you get right and the time taken to complete the quiz. You are treated with a reward screen at the end! You can save your score, and if it is high enough, it may be on the leaderboards! You are also able to hide the timer in this mode through Settings (top right)." textAlignment="JUSTIFY" visible="false" wrappingWidth="827.71533203125">
+         <font>
+            <Font name="Cousine" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="gm4" fill="WHITE" layoutX="85.0" layoutY="608.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The practice quiz lets you practice and learn new Te Reo words. In this mode, there is no scoring nor time pressure. You are able to show hints. This space is purely for learning! Here you can practice the content before you take the quiz. The practice quiz also shows you the correct spelling of the previous word." textAlignment="JUSTIFY" visible="false" wrappingWidth="827.71533203125">
+         <font>
+            <Font name="Cousine" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="macrons2" fill="WHITE" layoutX="85.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="There are two ways to enter macrons: either by typing or by clicking buttons." textAlignment="JUSTIFY" visible="false" wrappingWidth="827.71533203125">
+         <font>
+            <Font name="Cousine" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="macrons1" fill="WHITE" layoutX="313.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MACRONS" textAlignment="CENTER" visible="false" wrappingWidth="372.71533203125">
+         <font>
+            <Font name="Cousine Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <Text fx:id="macrons3" fill="WHITE" layoutX="85.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To enter macrons by typing, type * before a vowel to macronise it. For example, typing *a will return ā." textAlignment="JUSTIFY" visible="false" wrappingWidth="827.71533203125">
+         <font>
+            <Font name="Cousine" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="macrons4" fill="WHITE" layoutX="85.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can also enter macrons by clicking buttons on the screen. You can disable these buttons in Settings (top right) if you wish to only enter macrons by typing." textAlignment="JUSTIFY" visible="false" wrappingWidth="827.71533203125">
+         <font>
+            <Font name="Cousine" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="ss2" fill="WHITE" layoutX="85.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At any time (even during a game), you can change the speed at which Te Reo words are spoken through Settings (top right). Simply move the slider to the speed you want!" textAlignment="JUSTIFY" visible="false" wrappingWidth="827.71533203125">
+         <font>
+            <Font name="Cousine" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="ss1" fill="WHITE" layoutX="313.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SPEECH SPEED" textAlignment="CENTER" visible="false" wrappingWidth="372.71533203125">
+         <font>
+            <Font name="Cousine Bold" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+   </children>
+</AnchorPane>

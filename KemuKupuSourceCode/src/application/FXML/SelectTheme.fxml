@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" styleClass="backgroundColor" stylesheets="@../CSS/application.css" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="application.SelectThemeController">
+   <children>
+      <ImageView fx:id="settingsNormal" fitHeight="77.0" fitWidth="86.0" layoutX="866.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/settings.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow height="36.18" radius="24.42" spread="0.25" width="63.5" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="174.0" fitWidth="171.0" layoutX="415.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/questionMark.gif" />
+         </image>
+         <effect>
+            <DropShadow height="42.25" radius="19.1075" spread="0.04" width="36.18" />
+         </effect>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-14.0" layoutY="72.0" prefHeight="58.0" prefWidth="1000.0" text="SELECT  THEME" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Cousine Bold" size="54.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ImageView fx:id="settingsHover" fitHeight="77.0" fitWidth="86.0" layoutX="866.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/settings.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Glow level="0.89" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="settingsClicked" blendMode="MULTIPLY" fitHeight="77.0" fitWidth="86.0" layoutX="866.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/settings.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow height="36.18" radius="24.42" spread="0.25" width="63.5" />
+         </effect>
+      </ImageView>
+      <Button layoutX="866.0" layoutY="61.0" mnemonicParsing="false" onMouseClicked="#showSettings" onMouseEntered="#showSettingsGlow" onMouseExited="#hideSettingsGlow" onMousePressed="#showSettingsClicked" onMouseReleased="#hideSettingsClicked" opacity="0.0" prefHeight="83.0" prefWidth="75.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="111.0" fitWidth="313.0" layoutX="166.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/colours.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="313.0" layoutX="166.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/compassPoints.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="313.0" layoutX="166.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/weather.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="313.0" layoutX="166.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/software.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="313.0" layoutX="166.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dotw1.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="313.0" layoutX="166.0" layoutY="592.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/moty1.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="313.0" layoutX="344.0" layoutY="672.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/uniLife.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="313.0" layoutX="522.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/babies.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="313.0" layoutX="522.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/feelings.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="313.0" layoutX="522.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/work.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="313.0" layoutX="522.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/engineering.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="313.0" layoutX="522.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/dotw2.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="313.0" layoutX="522.0" layoutY="592.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/moty2.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="coloursH" fitHeight="111.0" fitWidth="313.0" layoutX="166.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/colours.png" />
+         </image>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="compassPointsH" fitHeight="111.0" fitWidth="313.0" layoutX="166.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/compassPoints.png" />
+         </image>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="weatherH" fitHeight="111.0" fitWidth="313.0" layoutX="166.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/weather.png" />
+         </image>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="softwareH" fitHeight="111.0" fitWidth="313.0" layoutX="166.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/software.png" />
+         </image>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="dotw1H" fitHeight="111.0" fitWidth="313.0" layoutX="166.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/dotw1.png" />
+         </image>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="moty1H" fitHeight="111.0" fitWidth="313.0" layoutX="166.0" layoutY="592.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/moty1.png" />
+         </image>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="uniLifeH" fitHeight="111.0" fitWidth="313.0" layoutX="344.0" layoutY="672.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/uniLife.png" />
+         </image>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="babiesH" fitHeight="111.0" fitWidth="313.0" layoutX="522.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/babies.png" />
+         </image>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="feelingsH" fitHeight="111.0" fitWidth="313.0" layoutX="522.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/feelings.png" />
+         </image>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="workH" fitHeight="111.0" fitWidth="313.0" layoutX="522.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/work.png" />
+         </image>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="engineeringH" fitHeight="111.0" fitWidth="313.0" layoutX="522.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/engineering.png" />
+         </image>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="dotw2H" fitHeight="111.0" fitWidth="313.0" layoutX="522.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/dotw2.png" />
+         </image>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="moty2H" fitHeight="111.0" fitWidth="313.0" layoutX="522.0" layoutY="592.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/moty2.png" />
+         </image>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </ImageView>
+      <Button layoutX="166.0" layoutY="192.0" mnemonicParsing="false" onAction="#colours" onMouseEntered="#showColours" onMouseExited="#hideColours" opacity="0.0" prefHeight="66.0" prefWidth="313.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="166.0" layoutY="272.0" mnemonicParsing="false" onAction="#compassPoints" onMouseEntered="#showCompassPoints" onMouseExited="#hideCompassPoints" opacity="0.0" prefHeight="66.0" prefWidth="313.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="166.0" layoutY="352.0" mnemonicParsing="false" onAction="#weather" onMouseEntered="#showWeather" onMouseExited="#hideWeather" opacity="0.0" prefHeight="66.0" prefWidth="313.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="166.0" layoutY="432.0" mnemonicParsing="false" onAction="#software" onMouseEntered="#showSoftware" onMouseExited="#hideSoftware" opacity="0.0" prefHeight="66.0" prefWidth="313.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="166.0" layoutY="512.0" mnemonicParsing="false" onAction="#daysOfTheWeek1" onMouseEntered="#showDotw1" onMouseExited="#hideDotw1" opacity="0.0" prefHeight="66.0" prefWidth="313.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="166.0" layoutY="592.0" mnemonicParsing="false" onAction="#monthsOfTheYear1" onMouseEntered="#showMoty1" onMouseExited="#hideMoty1" opacity="0.0" prefHeight="66.0" prefWidth="313.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="522.0" layoutY="192.0" mnemonicParsing="false" onAction="#babies" onMouseEntered="#showBabies" onMouseExited="#hideBabies" opacity="0.0" prefHeight="66.0" prefWidth="313.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="522.0" layoutY="272.0" mnemonicParsing="false" onAction="#feelings" onMouseEntered="#showFeelings" onMouseExited="#hideFeelings" opacity="0.0" prefHeight="66.0" prefWidth="313.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="522.0" layoutY="352.0" mnemonicParsing="false" onAction="#work" onMouseEntered="#showWork" onMouseExited="#hideWork" opacity="0.0" prefHeight="66.0" prefWidth="313.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="522.0" layoutY="432.0" mnemonicParsing="false" onAction="#engineering" onMouseEntered="#showEngineering" onMouseExited="#hideEngineering" opacity="0.0" prefHeight="66.0" prefWidth="313.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="522.0" layoutY="512.0" mnemonicParsing="false" onAction="#daysOfTheWeek2" onMouseEntered="#showDotw2" onMouseExited="#hideDotw2" opacity="0.0" prefHeight="66.0" prefWidth="313.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="522.0" layoutY="592.0" mnemonicParsing="false" onAction="#monthsOfTheYear2" onMouseEntered="#showMoty2" onMouseExited="#hideMoty2" opacity="0.0" prefHeight="66.0" prefWidth="313.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="344.0" layoutY="672.0" mnemonicParsing="false" onAction="#uniLife" onMouseEntered="#showUniLife" onMouseExited="#hideUniLife" opacity="0.0" prefHeight="66.0" prefWidth="313.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="settingsNormal1" fitHeight="77.0" fitWidth="86.0" layoutX="65.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/clipart4338423.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow height="36.18" radius="24.42" spread="0.25" width="63.5" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="homeHover" fitHeight="77.0" fitWidth="86.0" layoutX="65.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/clipart4338423.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Glow level="0.89" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="homeClicked" blendMode="MULTIPLY" fitHeight="77.0" fitWidth="86.0" layoutX="65.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../images/clipart4338423.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow height="36.18" radius="24.42" spread="0.25" width="63.5" />
+         </effect>
+      </ImageView>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="65.0" layoutY="63.0" mnemonicParsing="false" onAction="#switchToMain" onMouseEntered="#showHomeGlow" onMouseExited="#hideHomeGlow" onMousePressed="#showHomeClicked" onMouseReleased="#hideHomeClicked" opacity="0.0" prefHeight="68.0" prefWidth="86.0" style="-fx-background-color: #768d87; -fx-border-radius: 15px;">
+         <font>
+            <Font name="Cousine Bold" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
